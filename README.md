@@ -180,3 +180,11 @@ Cloud Bigtable kann in das Apache-Ökosystem und andere Google Cloud-Produkte in
 ## CLOUD BIGTABLE PREISEN
 ![ ](8.PNG)
 
+# Quelle
+[http://www.datenbanken-verstehen.de/lexikon/datenbanksystem/]
+
+[https://cloud.google.com/bigtable/]
+
+[https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf]
+
+[https://de.wikipedia.org/wiki/Google_BigTable]
