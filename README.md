@@ -70,4 +70,6 @@ Die Datenbank-Managementsysteme **MySQL** und **MariaDB** basieren auf demselben
 
 ![ ](6.PNG)
 
+![ ](7.PNG)
+
 
