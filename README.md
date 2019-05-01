@@ -1,4 +1,4 @@
-### Datenbanken
+# Datenbanken
 Ein Datenbanksystem ist ein System zur elektronischen Datenverwaltung. Es
 unterstützt die computergestützte Datenverarbeitung von Informationen die durch
 eine Datenbankapplikation erzeugt und verarbeitet werden. Außerdem strukturiert es
