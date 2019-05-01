@@ -58,5 +58,16 @@ Die Ziele der MariaDB Foundation:
 *	Alle Entwicklungsschritte werden öffentlich dokumentiert.
 Die Datenbank-Managementsysteme **MySQL** und **MariaDB** basieren auf demselben Software-Kern. Bis **MySQL Version 7** waren beide Systeme kompatibel, d.h. Drop-In Replacement und sogar Upgrades sollten in beide Richtungen funktionieren. **MySQL 8** ist nicht mehr abwärtskompatibel, weder zu seinem eigenen System, noch zu **MariaDB**.
 
+![ ](1.PNG)
+
+![ ](2.PNG)
+
+![ ](3.PNG)
+
+![ ](4.PNG)
+
+![ ](5.PNG)
+
+![ ](6.PNG)
 
 
