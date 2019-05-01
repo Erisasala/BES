@@ -59,17 +59,124 @@ Die Ziele der MariaDB Foundation:
 Die Datenbank-Managementsysteme **MySQL** und **MariaDB** basieren auf demselben Software-Kern. Bis **MySQL Version 7** waren beide Systeme kompatibel, d.h. Drop-In Replacement und sogar Upgrades sollten in beide Richtungen funktionieren. **MySQL 8** ist nicht mehr abwärtskompatibel, weder zu seinem eigenen System, noch zu **MariaDB**.
 
 ![ ](1.PNG)
-
 ![ ](2.PNG)
-
 ![ ](3.PNG)
-
 ![ ](4.PNG)
-
 ![ ](5.PNG)
-
 ![ ](6.PNG)
-
 ![ ](7.PNG)
 
+
+Wie man auch anhand der Tabelle sehen kann, ist **MariaDB** schon längst nicht mehr nur als Fork von **MySQL** anzusehen. Es hat **MySQL** in manchen Bereichen technologisch bereits überholt („War of Features“).
+Besonders hervorzuheben an **MariaDB**, sind folgende Konzepte:
+* Bietet dem Anwender eine optimalen Speicherengine für alle Anwendungsfälle - große Palette an Datenbankengines im Vergleich zu **MySQL**.
+
+*	Sicherheit der der gespeicherten Daten. Seit Version 10.1 - Möglichkeit zur Verschlüsselung von Daten auf Storage-Ebene. Ganze Table-Spaces oder einzelne Tabellen, sowie verschiedenste Log-Dateien können verschlüsselt werden.
+
+3.	Role-based Access Control – Zugriffsrechte werden nicht klassisch (wie bei **MySQL**) auf der Basis einzelner Benutzer vergeben, sondern anhand definierter Rollen, die ein Mitarbeiter im Unternehmen ausfüllt. Das erleichtert die Verwaltung - User muss nicht angelegt, sondern nur zugewiesen werden.
+
+4.	Das mächtigste Tool von MariaDB ist MaxScale (Benannt nach Widenius’ Sohn). Er ist ein Datenbank-Router, der zum Load-Balancing von Clustern (System Galera), für Master-Slave-Replikationen und zukünftig auch als Firewall eingesetzt wird. MaxScale ist für den Anwender unsichtbar, er stellt eine normale Datenbankinstanz dar. Gegenüber dem Datenbank-Cluster, bildet MaxScale eine übergeordnete Schicht, die die Kommunikation zwischen Anwendung und Datenbanken steuert. Änderungen an den Datenbank-Clustern wirken sich nicht auf die Anwendungsschicht aus.
+
+5.	Selbstoptimierung der MariaDB Datenbank –Generierung von Statistiken, unabhängig von der Speicherengine – diese fließen in Query-Optimizer ein. Anpassung an Unternehmensanforderungen.
+
+**MariaDB** ist heute Standard in allen großen Linux Distributionen.
+
+## PostgreSQL
+
+PostgreSQL , oft kurz Postgres genannt, ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). Seine Entwicklung begann in den 1980er Jahren, seit 1997 wird die Software
+von einer Open-Source-Community weiterentwickelt.
+Eine Objektrelationale Datenbank (kurz ORDB), auch objektrelationales
+Datenbankmanagementsystem (kurz ORDBMS) genannt, stellt das Bindeglied zwischen
+klassischen relationalen Datenbanken und Objektdatenbanken dar. Sie kommen überall dort zum
+Einsatz, wo Mengen von Objekten in Beziehung zu anderen Daten oder Objekten gebracht werden
+müssen.
+PostgreSQL nennt sich selbst "The world's most advanced open source database". PostgreSQL ist für
+Linux, aber auch für alle anderen, gängigen Betriebssysteme wie MacOS, Windows und BSD
+verfügbar.
+PostgreSQL setzt den SQL-Standard 2008 sehr umfassend um. Neben den gängigen Datentypen kann
+die Datenbank auch nativ mit XML umgehen und ab Version 9.2 auch mit Daten im JSON-Format:.
+PostgreSQL ist weitgehend konform mit dem SQL-Standard SQL:2011, d. h. der Großteil der
+Funktionen ist verfügbar und verhält sich wie definiert.
+PostgreSQL ist vollständig ACID-konform *(inklusive der Data Definition Language), und unterstützt
+erweiterbare Datentypen, Operatoren, Funktionen und Aggregate.
+**ACID-konform** (atomacy, consistency, isolation, durability)
+Das **ACID-Prinzip** beschreibt **sinnvolle Regeln zum effektiven und effizienten Umgang mit
+Datenbanktransaktionen. Eine Datenbanktransaktion ist eine Sequenz von Operationen**, die
+einzigartig und durchführbar sein muss.
+* Atomicity oder Atomarität: Ausführung aller oder keiner Informationsteile einer Transaktion
+* Consistency oder Konsistenz: Transaktionen erzeugen einen gültigen Zustand oder fallen in
+den alten Zustand zurück
+* Isolation oder Abgrenzung: Transaktionen verschiedener Anwender oder Prozesse bleiben
+voneinander isoliert
+* Durability oder Dauerhaftigkeit: Nach einer erfolgreichen Transaktion bleiben die Daten
+dauerhaft gespeichert
+Obwohl sich die Entwicklergemeinde sehr eng an den SQL-Standard hält, gibt es dennoch eine Reihe
+von PostgreSQL-spezifischen Funktionalitäten, wobei in der Dokumentation bei jeder Eigenschaft ein
+Hinweis erfolgt, ob dies dem SQL-Standard entspricht, oder ob es sich um eine spezifische
+Erweiterung handelt. Darüber hinaus verfügt PostgreSQL über ein umfangreiches Angebot an
+Erweiterungen durch Dritthersteller, wie z. B. PostGIS zur Verwaltung von Geodaten.
+PostgreSQL ist in den meisten Linux-Distributionen enthalten. Apple liefert von der Version Mac OS X
+Lion (10.7) an PostgreSQL als Standarddatenbank aus.
+
+## Oracle 
+Oracle wurde im Jahr 1977 von Larry Ellison gegründet und ist zurzeit das populärste relationale Datenbankmanagemantsystem
+Programmiersprache:
+* Assemblersprache
+*	C
+*	C++
+*	Java
+Unterstützte Betriebssysteme:
+*	Linux
+*	Windows
+*	Solaris
+*	HP-UX
+*	AIX
+Verschiedene Editionen:
+*	Enterprise -> enthält alle Features (am teuersten)
+*	Standard -> enthält standard Features
+*	Express -> gratis (sehr stark eingeschränkt)
+*	Lite -> für mobile Geräte
+Für Studienzwecke ist Oracle frei erhältlich
+War die erste Datenbank welche für Grid-Computing ausgelegt wurde (Kosten- und Ressourcensparend)
+Implementierung der ACID-Eigenschaften (atmoicity, consistency, isolation, duarbility)
+*	atmoicity -> kann eine Transaktion nicht vollständig durchgeführt werden, wird ein Rollback ausgeführt, d.h. auch erfolgreiche Teile der Tansaktion werden zurückgesetzt (Alles oder Nichts Prinzip)
+*	consistency -> Integritätsbedingungen werden vor dem Abschluss der Transaktion überprüft
+*	isolation -> parallel laufende Transaktionen beeinflussen einander nicht
+*	duarbility -> gewährleistet dass Daten nach einer Transaktion dauerhaft in der Datenbank gespeichert sind
+
+Java kann innerhalb der Datenbank ausgeführt werden
+Gespeicherte Prozeduren erfolgen in PL/SQL oder Java
+Unterstützung von regulären Ausdrücken
+
+Abweichungen des ANSI-SQL-Standards:
+*	Datentyp „date“ enthält zusätzlich die Uhrzeit
+*	Datentyp „boolean“ ist nicht vorhanden
+*	Leerzeichen und NULL werden nicht  unterschieden
+Lizenzeirung:
+*	abhängig von der Anzahl der Prozessorkerne
+*	abhängig von der Anzahl der möglichen Benutzer
+Die Lizenzeirung ist sehr teuer und daher ein großer Nachteil von Oracle
+Neuere Versionen beinhalten die Features der älteren Versionen, d.h. alte Datenbanken sind auch mit der aktuellsten Version kompatibel
+
+## BigTable
+BigTable  unterstützt das MapReduce-Verfahren und stellte die Grundlage von vielen Google-Produkten, wie etwa Google Maps, Google Bücher, YouTube oder Google Earth, dar. Besonderer Wert wurde auf Skalierbarkeit und Geschwindigkeit gelegt. Die Datenbank basiert deshalb auch auf einer nichtrelationalen Struktur.
+Charakteristisch für in BigTable gespeicherte Daten ist, dass sehr häufig Datensätze hinzugefügt werden, vorhandene Datensätze aber sehr selten geändert werden. Eine BigTable besteht grundlegend aus sehr vielen Zeilen. Innerhalb einer Zeile können beliebig viele Spalten definiert werden.
+Eine Bigtable ist eine spärlich verteilte, beständige, mehrdimensional sortierte Mappe. Die Mappe wird durch eine Zeile Schlüssel, Spaltenschlüssel und ein Zeitstempel indiziert. Jeder Wert in der Mappe ist ein nicht interpretiertes Array von Bytes.
+Konsistente Latenzzeit unter 10 ms
+
+
+## Integration
+Cloud Bigtable kann in das Apache-Ökosystem und andere Google Cloud-Produkte integriert werden. Im GCP-Ökosystem kann BigQuery Daten abfragen, die in einer Cloud Bigtable-Datenbank gespeichert sind. Mit Cloud Dataflow können Sie Daten verarbeiten, die in Cloud Bigtable gespeichert sind, oder die Ausgabe Ihrer Cloud Dataflow-Pipeline speichern. Die Cloud Bigtable-Unterstützung für die HBase-API ermöglicht eine Schnittstelle mit einer Reihe von Funktionen wie Apache Beam für die Datenverarbeitung, JanusGraph für die grafische Analyse und OpenTSDBTM für die Zeitreihenanalyse.
+## Vorteile von BigTable sind: 	
+
+*	Konsistente Latenzzeit unter 10 ms
+*	Die Replikation sorgt für höhere Verfügbarkeit, höhere Haltbarkeit und Ausfallsicherheit bei Zonenausfällen
+*	Ideal für Ad Tech, Fintech und IoT
+*	Einfache Integration mit Open-Source-Big-Data-Tools
+*	Schnell und performant
+*	Nahtlose Skalierung und Replikation
+*	Einfach und integriert
+
+## CLOUD BIGTABLE PREISEN
+![ ](8.PNG)
 
