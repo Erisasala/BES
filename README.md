@@ -188,3 +188,11 @@ Cloud Bigtable kann in das Apache-Ökosystem und andere Google Cloud-Produkte in
 [https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf]
 
 [https://de.wikipedia.org/wiki/Google_BigTable]
+
+[https://de.wikipedia.org/wiki/Oracle_(Datenbanksystem)]
+
+[https://en.wikipedia.org/wiki/Oracle_Database]
+
+[https://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm]
+
+[https://www.techopedia.com/definition/8711/oracle-database]
